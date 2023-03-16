@@ -33,7 +33,7 @@ style: |
   background-size: 100%;
 ---
 
-<h1 class="bg-gray-500 px-5 py-3 rounded-lg shadow-xl">Not an <strong>architecture design</strong> talk 🏠</h1>
+<h1 class="bg-gray-500 px-5 py-3 rounded-lg shadow-xl">Not a <strong>systems design</strong> talk 🏠</h1>
 
 <!-- <img src="https://images.unsplash.com/photo-1621537108694-3a8259512251" class="absolute inset-0 opacity-20"> -->
 
@@ -67,13 +67,13 @@ image: https://bholmes.dev/assets/me.jpg
 
 # Has **this** happened to you? 🙋
 
-![Counter counting super fast in code demo](/useeffect-explosion.gif)
+<img src="/useeffect-explosion.gif" />
 
 ---
 
 # Have you Googled **this** before? 🙋
 
-<img src=/use-memo.png class="w-140">
+<img src=/use-memo.png class="w-140" />
 
 <arrow x1=200 y1=220 x2=330 y2=130 width=3 color=red />
 
@@ -91,11 +91,17 @@ src: ./slides/easy-then-hard.md
 
 Example: React
 
-<v-click>
+<v-clicks>
 
-**Assume** a goal, **lower** developer friction as much as possible to get there.
+- **Assume** a goal, **lower** developer friction as much as possible to get there.
+- ✅ Hide complexity, get it shipped.
+- 😈 ...But deal with **complexity monster** later.
 
-</v-click>
+</v-clicks>
+
+---
+
+# Whiteboard time 
 
 ---
 
@@ -185,7 +191,7 @@ function ShoppingCart() {
 
 ---
 
-# Inspiring an ecosystem
+# Part of a new wave in frameworks
 
 Case: Svelte
 
@@ -326,8 +332,18 @@ export function EcommProductListing() {
 
 ---
 
+# Let's see a demo!
+
+<div>
+
+[astro.new](https://astro.dev)
+
+</div>
+
+---
+
 # Thank you ❤️
 
-- Find me **@bholmesdev** everywhere, especially YouTube!
+- Find me **@bholmesdev** everywhere - youtube.com/@bholmesdev
 - **React Server Components x Deno demo** - github.com/bholmesdev/deno-rsc
 - **This slideshow** - github.com/bholmesdev/talk-opt-in-design
