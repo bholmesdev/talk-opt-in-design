@@ -323,3 +323,11 @@ export function EcommProductListing() {
 3. User-first? <strong v-click=4>✅ Minimize loading and layout shift for SEO</strong>
 
 </v-click>
+
+---
+
+# Thank you ❤️
+
+- Find me **@bholmesdev** everywhere, especially YouTube!
+- **React Server Components x Deno demo** - github.com/bholmesdev/deno-rsc
+- **This slideshow** - github.com/bholmesdev/talk-opt-in-design
