@@ -49,15 +49,22 @@ style: |
 </v-clicks>
 
 ---
-layout: image-left
-image: https://bholmes.dev/assets/me.jpg
+layout: two-cols
 ---
+
+<video src="/whiteboard-flip.mov" autoplay loop muted />
+
+::right::
+
+<div class="pl-5">
 
 # I'm Ben! 👋
 
 - Core maintainer at **Astro.build**
 - CEO of whiteboards [**wtw.dev**](https://wtw.dev) 👀
-- Values: be caring, be clear, be casual
+- Champion of content 🏆
+
+</div>
 
 ---
 
@@ -98,10 +105,6 @@ Example: React
 - 😈 ...But deal with **complexity monster** later.
 
 </v-clicks>
-
----
-
-# Whiteboard time 
 
 ---
 
