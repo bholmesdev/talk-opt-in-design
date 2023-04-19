@@ -318,37 +318,6 @@ import LikeButton from '../components/LikeButton';
 
 </v-click>
 
----
-clicks: 4
----
-
-# React Suspense brings opt-in to loading
-
-```tsx {all|4,5|6-9}
-export function EcommProductListing() {
-  return (
-    <ProductListing>
-      {/* 🛑 Block until description is ready */}
-      <Description />
-      {/* 🔁 Send loading spinner, update when ready */}
-      <Suspense fallback={ReviewsSkeleton}>
-        <Reviews />
-      </Suspense>
-    </ProductListing>
-  )
-}
-```
-
-<v-click at=3>
-
-1. LCD? <strong v-click=4>✅ Critical pages (ex. homepage) where blocking > loading spinners</strong>
-2. Additive complexity? <strong v-click=4>✅ Suspense adds loading state</strong>
-3. User-first? <strong v-click=4>✅ Minimize loading and layout shift for SEO</strong>
-
-</v-click>
-
----
-
 # Let's see a demo!
 
 <div>
