@@ -52,7 +52,7 @@ style: |
 layout: two-cols
 ---
 
-<video src="/whiteboard-flip.mov" autoplay loop muted />
+<img src="/whiteboard-flip.gif" alt="Whiteboard guy flipping" />
 
 ::right::
 
@@ -317,6 +317,8 @@ import LikeButton from '../components/LikeButton';
 4. User-first? <strong v-click=4>✅ Maximize core web vitals</strong>
 
 </v-click>
+
+---
 
 # Let's see a demo!
 
