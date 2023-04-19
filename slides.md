@@ -60,15 +60,21 @@ layout: two-cols
 
 # I'm Ben! 👋
 
-- Core maintainer at **Astro.build**
+- Dream job: Lego set designer
+- Actual job: Core maintainer at **Astro.build**
+
+<v-click>
+
 - CEO of whiteboards [**wtw.dev**](https://wtw.dev) 👀
 - Champion of content 🏆
+
+</v-click>
 
 </div>
 
 ---
 
-# **React devs** 🙋
+# 🙋 **Have you used ReactJS before?**
 
 ---
 
@@ -112,7 +118,7 @@ Example: React
 
 <div v-click>
 
-Let's compare **React** vs **SolidJS** 💪
+Let's compare **React** vs **Solid**
 
 > A declarative JavaScript framework for building **fast UIs** with **max control over reactivity.**
 >
@@ -131,25 +137,29 @@ clicks: 4
 
 ## React
 
-```tsx {1,4|5,10|5,10} {at:0}
+```tsx {all|13,14,5,7-8|5,14|3,18} {at:0}
 import { useState } from 'react';
 
 function ShoppingCart() {
-  const [quantity, setQuantity] = useState(0);
-  const price = calculatePrice(quantity);
-
+  const [qty, setQty] = useState(0);
+  const price = calculatePrice(qty);
+  
+  const productImages = fetchImages('[product]');
+  const shippingText = fetchShipping('[product]');
 
   return (
-    <Cart quantity={quantity}>
-      <TextInput onInput={setQuantity} />
-      <Price>{price}</Price>
-    </Cart>
+    <>
+      <ProductImages images={productImages} />
+      <button onClick={() => setQuantity(qty)}>{qty}</button>
+      <p>{price}</p>
+      <p>{shippingText}</p>
+    </>
   )
 }
 ```
 
-<Price v-if="$slidev.nav.clicks === 1" />
-<Price v-if="$slidev.nav.clicks === 2" />
+<PriceReact v-if="$slidev.nav.clicks === 1" />
+<PriceReact v-if="$slidev.nav.clicks === 2" />
 
 <v-click at=3>
 
@@ -162,25 +172,29 @@ function ShoppingCart() {
 
 ## Solid
 
-```tsx {1,4|5,10|6,10} {at:0}
+```tsx {1-5,7-18|13,14,5,7-8|6,14|14} {at:0}
 import { createSignal } from 'solid-js';
 
 function ShoppingCart() {
-  const [quantity, setQuantity] = createSignal(0);
-  ❌ const price = calculatePrice(quantity);
-  ✅ const price = () => calculatePrice(quantity);
+  const [qty, setQty] = createSignal(0);
+  ❌ const price = calculatePrice(qty);
+  ✅ const price = () => calculatePrice(qty);
+  const productImages = fetchImages('[product]');
+  const shippingText = fetchShipping('[product]');
 
   return (
-    <Cart quantity={quantity}>
-      <TextInput onInput={setQuantity} />
-      <Price>{price()}</Price>
-    </Cart>
+    <>
+      <ProductImages images={productImages} />
+      <button onClick={() => setQuantity(qty)}>{qty}</button>
+      <p>{price}</p>
+      <p>{shippingText}</p>
+    </>
   )
 }
 ```
 
-<PriceBorked v-if="$slidev.nav.clicks === 1" />
-<Price v-if="$slidev.nav.clicks === 2" />
+<PriceSolid v-if="$slidev.nav.clicks === 1" />
+<PriceSolid v-if="$slidev.nav.clicks === 2" />
 
 <v-click at=3>
 
@@ -345,8 +359,8 @@ export function EcommProductListing() {
 
 ---
 
-# Thank you ❤️
+# Thank you!
 
-- Find me **@bholmesdev** everywhere - youtube.com/@bholmesdev
-- **React Server Components x Deno demo** - github.com/bholmesdev/deno-rsc
-- **This slideshow** - github.com/bholmesdev/talk-opt-in-design
+- 🚀 **Join the Astro discord** - [astro.build/chat](astro.build/chat)
+- 🔎 Find me **@bholmesdev** everywhere - [wtw.dev](wtw.dev)
+- 🍔 **This slideshow** - [**github.com/bholmesdev**/talk-opt-in-design](github.com/bholmesdev/talk-opt-in-design)
