@@ -60,15 +60,9 @@ layout: two-cols
 
 # I'm Ben! 👋
 
-- Dream job: Lego set designer
-- Actual job: Core maintainer at **Astro.build**
-
-<v-click>
-
-- CEO of whiteboards [**wtw.dev**](https://wtw.dev) 👀
-- Champion of content 🏆
-
-</v-click>
+- Core maintainer at **Astro.build**
+- CWO (chief whiteboard officer) [**wtw.dev**](https://wtw.dev) 
+- **Champion of content.** Markdown, MDX, Markdoc, love em all 🏆
 
 </div>
 
@@ -193,7 +187,7 @@ function ShoppingCart() {
 }
 ```
 
-<PriceSolid v-if="$slidev.nav.clicks === 1" />
+<PriceSolidBorked v-if="$slidev.nav.clicks === 1" />
 <PriceSolid v-if="$slidev.nav.clicks === 2" />
 
 <v-click at=3>
