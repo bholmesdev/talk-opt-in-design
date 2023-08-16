@@ -70,10 +70,9 @@ transition: fade
 
 <v-clicks>
 
-- Lower developer friction at all costs
-- Hide complexity
+- **Assume** a goal, **lower** developer friction
 - Bundle the best toolbox up-front
+- ✅ Hide complexity
+- 😈 ...But deal with **complexity monster** later
 
 </v-clicks>
-
----
