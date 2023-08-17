@@ -1,16 +1,11 @@
 # A classic: create-react-app
 
-<div class="grid place-items-center h-100">
-<div grid="~ cols-2 gap-4">
-<div class="flex gap-16">
+<div class="grid grid-cols-[10px_1fr_1fr] grid-rows-[1fr_1em] gap-4 items-center h-100">
+
+<Line />
 
 <div>
-<Line />
-<KBCounter />
-</div>
-
-<img v-if="$slidev.nav.clicks === 4" src="TODO fire dog" />
-
+  <video class="rounded-lg" v-if="$slidev.nav.clicks === 4" autoplay loop playsinline src="spa-what-do-you-mean.mov" />
 </div>
 
 <div>
@@ -23,7 +18,8 @@
 
 </v-clicks>
 </div>
-</div>
+
+<KBCounter class="col-span-full" />
 </div>
 
 <style>
@@ -37,7 +33,7 @@
 
 
 ---
-transition: fade
+transition: slide-fade
 ---
 
 # Opt-out pains: CRA
@@ -46,7 +42,7 @@ transition: fade
 - **Opt-out** by "ejecting" 🏃‍♂️💨
 
 ---
-transition: fade
+transition: slide-fade
 ---
 
 # Opt-out pains: Styled Components
@@ -54,8 +50,6 @@ transition: fade
 - Happy path: JS first, CSS second
 - **Opt-out** by switching `$props` to CSS variables
 
----
-transition: fade
 ---
 
 # Opt-out pains: React Context
