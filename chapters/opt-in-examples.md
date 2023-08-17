@@ -65,7 +65,9 @@ clicks: 3
 clicks: 4
 ---
 
-# Astro brings opt-in to client-side JS
+# Server components bring opt-in to client-side JS
+
+Case: **Astro 🚀**
 
 ```astro {all|5-6|2,7-8}
 ---
@@ -83,6 +85,38 @@ import LikeButton from '../components/LikeButton';
 1. LCD? <strong v-click=4>✅ Static homepage with 0 JS</strong>
 2. Additive complexity? <strong v-click=4>✅ `client:` directive flags JS</strong>
 4. User-first? <strong v-click=4>✅ Maximize core web vitals</strong>
+
+</v-click>
+
+---
+clicks: 5
+---
+
+# Server components bring opt-in to streaming
+
+Case: **React Server Components ⚛️**
+
+```jsx {all|7|9|8-10}
+import { Suspense } from 'react';
+import Albums from '../components/Albums';
+
+export default function Page() {
+  return (
+    <>
+      <h1>Discogs</h2>
+      <Suspense fallback={<p>Loading albums...</p>}>
+        <Albums />
+      </Suspense>
+    </>
+  )
+}
+```
+
+<v-click at=4>
+
+1. LCD? <strong v-click=5>✅ Server render without spinners</strong>
+2. Additive complexity? <strong v-click=5>✅ `Suspense` boundary</strong>
+4. User-first? <strong v-click=5>✅ Minimize layout shift</strong>
 
 </v-click>
 
