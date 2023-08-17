@@ -8,7 +8,7 @@
 import { computed } from 'vue';
 
 const ys = [200, 300, 400];
-const colors = ["bg-green-300", "bg-green-300", "bg-yellow-300", "bg-orange-300", "bg-orange-300"];
+const colors = ["bg-green-300", "bg-yellow-300", "bg-orange-300", "bg-red-300", "bg-red-300"];
 const color = computed(() => colors[$slidev.nav.clicks]);
 const y = computed(() => 25 * $slidev.nav.clicks);
 </script>
