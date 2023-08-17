@@ -5,7 +5,7 @@
 <Line />
 
 <div>
-  <video class="rounded-lg" v-if="$slidev.nav.clicks === 4" autoplay loop playsinline src="spa-what-do-you-mean.mov" />
+  <video class="rounded-lg" v-if="$slidev.nav.clicks === 4" autoplay loop playsinline src="/spa-what-do-you-mean.mov" />
 </div>
 
 <div>
