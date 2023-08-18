@@ -33,16 +33,12 @@
 
 
 ---
-transition: slide-fade
----
 
 # Opt-out pains: CRA
 
 - Happy path: Have webpack managed for you
 - **Opt-out** by "ejecting" 🏃‍♂️💨
 
----
-transition: slide-fade
 ---
 
 # Opt-out pains: Styled Components

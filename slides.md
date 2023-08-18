@@ -1,4 +1,5 @@
 ---
+transition: slide-fade
 theme: default
 highlighter: shiki
 # use UnoCSS

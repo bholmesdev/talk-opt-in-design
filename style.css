@@ -5,10 +5,10 @@
 
 .slide-fade-enter-from {
   opacity: 0;
-  transform: translateY(10%);
+  transform: translateY(7%);
 }
 
 .slide-fade-leave-to {
   opacity: 0;
-  transform: translateY(-10%);
+  transform: translateY(-7%);
 }

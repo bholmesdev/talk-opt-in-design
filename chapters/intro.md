@@ -1,5 +1,4 @@
 ---
-transition: zoom
 class: "text-center text-gray-900"
 style: |
   font-family: "Comic Sans MS";
@@ -11,7 +10,6 @@ style: |
 Graphic design is my passion
 
 ---
-transition: zoom
 style: |
   background: url("https://images.unsplash.com/photo-1621537108694-3a8259512251");
   background-size: 100%;
