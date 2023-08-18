@@ -10,6 +10,7 @@
     "@slidev/cli": "^0.40.3",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*",
-    "slidev-theme-eloc": "^1.0.1"
+    "slidev-theme-eloc": "^1.0.1",
+    "vue": "^3.3.4"
   }
 }
