@@ -55,14 +55,6 @@
 
 ---
 
-# Have you Googled **this** before? 🙋
-
-<img src=/use-memo.png class="w-140" />
-
-<arrow x1=200 y1=220 x2=330 y2=130 width=3 color=red />
-
----
-
 # Opt-out ethos
 
 <v-clicks>
