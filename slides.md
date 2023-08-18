@@ -29,11 +29,11 @@ src: ./chapters/opt-in-examples.md
 
 ---
 
-# Let's see a demo!
+# Demo time 👀
 
 <div>
 
-[astro.new](https://astro.dev)
+[github.com/bholmesdev/simple-rsc](https://github.com/bholmesdev/simple-rsc)
 
 </div>
 
