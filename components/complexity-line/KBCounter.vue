@@ -3,20 +3,14 @@
   </p>
 </template>
 
-<script setup>
-import { computed, ref } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue';
 
-const kbCounts = [0, 66, 76, 80, 80];
-const colors = ["text-green-500", "text-yellow-500", "text-orange-500", "text-red-500", "text-red-500"];
+const props = defineProps<{
+  counts: number[],
+  colors: string[],
+}>();
 
-const kbs = computed(() => kbCounts[$slidev.nav.clicks]);
-const color = computed(() => colors[$slidev.nav.clicks]);
-
-// const interval = setInterval(() => {
-//   const target = kbCounts[$slidev.nav.clicks];
-//   if (kbs.value === target) return clearInterval(interval);
-
-//   kbs.value++;
-// }, 20);
-
+const kbs = computed(() => props.counts[$slidev.nav.clicks]);
+const color = computed(() => props.colors[$slidev.nav.clicks]);
 </script>
