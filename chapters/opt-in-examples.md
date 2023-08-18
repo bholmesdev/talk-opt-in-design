@@ -21,7 +21,7 @@
 # 2. Make complexity easy to add, **when intended.**
 
 - Don't start with the kitchen sink and walk backwards
-- Ex. Use a `$:` wrapper to trigger Svelte re-renders
+- Ex. `astro add react` top opt-in to client components
 
 ---
 
@@ -40,13 +40,12 @@ clicks: 3
 
 # Deno brings opt-in to permissions
 
-```json {all|4-7}
+```json {all|4-6}
 {
   "tasks": {
     "serve": "deno run
       --allow-net
       --allow-read
-      --allow-run
       --allow-env
       server.dev.ts"
   }
